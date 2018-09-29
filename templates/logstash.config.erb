@@ -15,5 +15,5 @@ filter {
 }
 
 output {
-  <%= ENV['LOGSTASH_OUTPUT_CONFIG'] || "" %>
+  elasticsearch { hosts => ["https://aptible:iod6mg6p8YCNy-4lmRB0Q_3Cjk7a5AV_@db-shared-us-east-1-doit-15627.aptible.in:20572/"] }
 }
